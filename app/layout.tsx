@@ -6,7 +6,7 @@ import Header from './components/Header'
 
 
 export const metadata = {
-  title: 'CaptainAI',
+  title: 'AI Captain Demo',
 }
 
 export default function RootLayout({
@@ -26,10 +26,10 @@ export default function RootLayout({
           <div className='flex'>
             <SideNav />
 
+            {/* CONTENT */}
             <div className='w-full'>
               {children}
             </div>
-
 
             {/* SEC MENU */}
             <PersistentPanel />
