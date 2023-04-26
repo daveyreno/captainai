@@ -1,4 +1,9 @@
 import './globals.css'
+import SideNav from './components/SideNav'
+import Snapshot from './components/Snapshot'
+import PersistentPanel from './components/PersistentPanel'
+import Header from './components/Header'
+
 
 export const metadata = {
   title: 'CaptainAI',
@@ -11,7 +16,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-slate-100'>{children}</body>
+      <body className='bg-slate-100'>
+        <main>
+
+          {/* HEADER */}
+          <Header />
+          <Snapshot />
+
+          <div className='flex'>
+            <SideNav />
+
+            <div className='w-full'>
+              {children}
+            </div>
+
+
+            {/* SEC MENU */}
+            <PersistentPanel />
+
+          </div>
+        </main>
+      </body>
     </html>
   )
 }
