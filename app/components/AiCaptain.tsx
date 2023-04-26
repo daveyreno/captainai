@@ -16,10 +16,10 @@ function AiCaptain() {
 
             </div>
 
-            <div className='flex flex-col gap-4 p-6 overflow-y-scroll border-b bg-slate-50 border-x h-80'>
+            <div className='flex flex-col gap-4 p-6 overflow-y-scroll border-b scrollbar-thin bg-slate-50 border-x h-80 scrollbar-thumb-slate-500 scrollbar-track-slate-200'>
 
                 <div className='flex justify-end'>
-                    <div className='w-2/3 p-4 rounded-lg bg-slate-200'>👋 Hi Barry! It's me, <span className='font-semibold'>AI Captain</span>. I noticed your Quality ScoreⓇ is currently 20. I can help you improve it, if you would like my help just ask.</div>
+                    <div className='w-2/3 p-4 rounded-lg bg-slate-200'>👋 Hi Barry! It's me, <span className='font-semibold'>AI Captain</span>. I'm an AI model that can chat to you to improve the chances of success on this app. I noticed your Quality ScoreⓇ is currently 20. I can help you improve it, if you would like my help just ask.</div>
                 </div>
 
                 <div className='flex'>
@@ -35,7 +35,7 @@ function AiCaptain() {
                 </div>
 
                 <div className='flex justify-end '>
-                    <div className='w-2/3 p-4 rounded-lg bg-slate-200'>Well done Barry, the Quality ScoreⓇ is now at 57. You can improve his by elaborating on the required action for Malcolms retirement exit plan.</div>
+                    <div className='w-2/3 p-4 rounded-lg bg-slate-200'>Well done Barry, the Quality ScoreⓇ is now at 57. You can improve his by elaborating on the <span className='font-semibold text-teal-500 underline transition duration-300 cursor-pointer hover:text-teal-400'>required action</span> for Malcolms retirement exit plan.</div>
                 </div>
 
                 <div className='flex'>

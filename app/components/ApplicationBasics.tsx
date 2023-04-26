@@ -9,7 +9,7 @@ function ApplicationBasics() {
                 </div>
 
                 <div className=''>
-                    <p className='p-2 px-3 text-xs font-bold rounded-full bg-slate-100'>Pre-Submission</p>
+                    <p className='p-2 px-3 text-xs font-semibold rounded-full bg-slate-100'>Pre-Submission</p>
                 </div>
 
             </div>
