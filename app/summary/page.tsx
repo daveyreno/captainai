@@ -21,7 +21,7 @@ function SummaryPage() {
         <div className='flex flex-col-reverse gap-4 md:flex-row'>
 
           {/* FIRST COLUMN */}
-          <div className='flex flex-col gap-3 md:w-1/2'>
+          <div className='flex flex-col gap-4 md:w-1/2'>
 
             <ApplicationBasics />
             <LoanInfo />
@@ -32,7 +32,7 @@ function SummaryPage() {
           </div>
 
           {/* SECOND COLUMN */}
-          <div className='flex flex-col gap-3 md:w-1/2'>
+          <div className='flex flex-col gap-4 md:w-1/2'>
 
             <AiCaptain />
             <Todo />
