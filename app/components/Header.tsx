@@ -7,11 +7,11 @@ function Header() {
             <div className='flex gap-4 md:gap-6'>
 
                 <div className='items-center hidden md:flex'>
-                    <Image src='/logo.svg' width='140' height='25' />
+                    <Image alt='Lendi Logo' src='/logo.svg' width='140' height='25' />
                 </div>
 
                 <div className='flex items-center md:hidden'>
-                    <Image src='/logo-sm.svg' width='36' height='25' />
+                    <Image alt='Lendi Logo' src='/logo-sm.svg' width='36' height='25' />
                 </div>
 
                 <div className=''>

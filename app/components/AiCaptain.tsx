@@ -9,7 +9,7 @@ function AiCaptain() {
                 <p className="flex justify-center mb-4 text-xs tracking-wide uppercase text-slate-500">Quality ScoreⓇ</p>
 
                 <div className='flex justify-center'>
-                    <Image className="" height='200' width='200' src='/guage.png' />
+                    <Image alt='Quality ScoreⓇ' className="" height='200' width='200' src='/guage.png' />
                 </div>
 
                 <p className='flex justify-center gap-1'>This application has a <span className='font-semibold'>40% probability</span> of MIR</p>
