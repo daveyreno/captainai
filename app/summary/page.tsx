@@ -34,24 +34,26 @@ function SummaryPage() {
 
     {/* MAIN MENU */}
     <div className='flex'>
-      <div className='w-56 p-6 border-r bg-white  min-h-screen'>
-        <div className=''>Summary</div>
-        <div className=''>Property</div>
-        <div className=''>Applicants</div>
-        <div className=''>Income & Expenses</div>
-        <div className=''>Assets & Liabilities</div>
-        <div className=''>Workshop your deal</div>
-        <div className=''>Needs & Objectives</div>
-        <div className=''>Choose your loan</div>
-        <div className=''>Savings calculator</div>
-        <div className=''>Required actions</div>
-        <div className=''>Required documents</div>
+      <div className='w-72 tracking-wide p-3 border-r bg-white  min-h-screen gap-2 flex flex-col'>
+        <div className='bg-slate-100 p-3 rounded-lg'>Summary</div>
+        <div className='p-3 rounded-lg'>Property</div>
+        <div className='p-3 rounded-lg'>Applicants</div>
+        <div className='p-3 rounded-lg'>Income & Expenses</div>
+        <div className='p-3 rounded-lg'>Assets & Liabilities</div>
+        <div className='p-3 rounded-lg'>Workshop your deal</div>
+        <div className='p-3 rounded-lg'>Needs & Objectives</div>
+        <div className='p-3 rounded-lg'>Choose your loan</div>
+        <div className='p-3 rounded-lg'>Savings calculator</div>
+        <div className='p-3 rounded-lg'>Required actions</div>
+        <div className='p-3 rounded-lg'>Required documents</div>
       </div>
 
 
 
       {/* CONTENT */}
-      <div className='w-full'>CONTENT</div>
+      <div className='w-full p-8'>
+        <div className='p-4 bg-white border rounded-xl h-36'>Where the happens</div>
+      </div>
 
 
       {/* SEC MENU */}
