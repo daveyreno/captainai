@@ -17,8 +17,7 @@ function SummaryPage() {
         </div>
       </div>
 
-
-
+      {/* SNAPSHOT */}
       <div className='flex bg-slate-100 border-b border-slate-200 p-3 items-center gap-3 font-semibold text-slate-800'>
         <div className='p-2 px-4 bg-red-600 rounded-lg text-white'>LOCKED</div>
         <div className=''>REFI 1</div>
@@ -30,7 +29,6 @@ function SummaryPage() {
         <div className=''>LVR: 89%</div>
       </div>
     </div>
-
 
     {/* MAIN MENU */}
     <div className='flex'>
@@ -48,16 +46,17 @@ function SummaryPage() {
         <div className='p-3 rounded-lg'>Required documents</div>
       </div>
 
-
-
       {/* CONTENT */}
       <div className='w-full p-8'>
-        <div className='p-4 bg-white border rounded-xl h-36'>Where the happens</div>
+        <div className='p-4 bg-white border rounded-xl h-36'>Where the magic happens</div>
       </div>
 
-
       {/* SEC MENU */}
-      <div className='bg-white border-l'>RIGHT PANEL</div>
+      <div className='bg-white border-l p-3 flex flex-col gap-4'>
+        <div className='w-12 h-12 bg-slate-100 rounded-full'></div>
+        <div className='w-12 h-12 bg-slate-100 rounded-full'></div>
+        <div className='w-12 h-12 bg-slate-100 rounded-full'></div>
+      </div>
     </div>
     </main>
 
