@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Required Actions - AI Captain Demo',
+}
+
+
 function RequiredActionsPage() {
     return (
 

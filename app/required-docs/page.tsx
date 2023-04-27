@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Required Docs - AI Captain Demo',
+}
+
+
 function RequiredDocsPage() {
     return (
 
@@ -29,7 +34,7 @@ function RequiredDocsPage() {
                         </div>
                     </div>
 
-                    <div className='flex flex-col p-6 border-b border-bborder-x bg-slate-50 border-x'>
+                    <div className='flex flex-col p-6 border-b border-border-x bg-slate-50 border-x'>
 
                         <div className='flex justify-between p-6 text-lg bg-white border cursor-pointer rounded-t-xl hover:bg-slate-100'>
                             <p>Primary ID - Malcolm</p>

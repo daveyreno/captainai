@@ -7,6 +7,9 @@ import PrimaryProperty from "./components/PrimaryProperty"
 import PrimaryPurpose from "./components/PrimaryPurpose"
 import Todo from "./components/Todo"
 
+export const metadata = {
+  title: 'Summary - AI Captain Demo',
+}
 
 function SummaryPage() {
   return (
