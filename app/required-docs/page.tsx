@@ -40,9 +40,29 @@ function RequiredDocsPage() {
                             <p>Primary ID - Malcolm</p>
                             <svg xmlns="http://www.w3.org/2000/svg" height='26' viewBox="0 0 24 24" id="angle-up"><path fill="#%236563FF" d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z"></path></svg>
                         </div>
+
+
+
+
                         <div className='flex flex-col justify-end gap-4 p-6 bg-white border-b border-x'>
                             <button className='w-full p-4 text-sm font-semibold tracking-widest text-white uppercase transition duration-300 bg-teal-500 rounded-lg lg:px-6 hover:bg-teal-600 md:w-fit'>Upload</button>
                         </div>
+
+
+                        <div className='flex flex-col justify-end gap-4 p-6 bg-white border-b border-x'>
+                            <p>Uploading</p>
+                            <div className='rounded-full bg-slate-200'>
+                                <div className='w-1/3 h-2 bg-teal-500 rounded-full'></div>
+                            </div>
+                        </div>
+
+
+                        <div className='flex justify-between gap-4 p-6 bg-white border-b border-x'>
+                            <p>DriversLicence.pdf</p>
+                            <p>Delete</p>
+                        </div>
+
+
 
                         <div className='flex justify-between p-6 text-lg transition border-b border-x hover:bg-white'>
                             <p>Primary ID - Mary</p>
