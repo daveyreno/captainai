@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className='mb-4 font-extrabold tracking-tighter text-8xl'>CaptainAI</h1>
         <p className='mb-8 text-2xl text-slate-500'>Improving productivity and reducing uncertainty.</p>
         <Link href='/summary'>
-          <button className='px-6 py-4 text-xl text-white bg-teal-600 rounded hover:bg-teal-500'>Let's go</button>
+          <button className='px-6 py-4 text-xl text-white bg-teal-600 rounded hover:bg-teal-500'>Lets go</button>
         </Link>
       </div>
     </main>
