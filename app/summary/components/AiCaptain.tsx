@@ -5,7 +5,7 @@ function AiCaptain() {
         <div className="">
             <div className="flex flex-col py-8 bg-white border rounded-t-lg">
                 <p className="flex justify-center mb-4 text-xs tracking-wide uppercase text-slate-500">
-                    Quality Score&copy;
+                    Quality Score&reg;
                 </p>
                 <div className="flex justify-center">
                     <Image

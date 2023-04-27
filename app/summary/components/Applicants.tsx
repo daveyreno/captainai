@@ -5,7 +5,7 @@ function Applicants() {
 
             <div className='p-6 border-b'>
                 <p className="mb-1 text-xs tracking-wide uppercase text-slate-500">Borrower</p>
-                <p className='text-lg font-semibold'>Malcom McGarryface</p>
+                <p className='text-lg font-semibold'>Max McGarryface</p>
                 <div className='grid grid-cols-1 gap-2 mt-4 md:grid-cols-2'>
                     <div className='flex gap-2 text-sm'>
                         <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="check"><path fill="#10b981" d="M18.71,7.21a1,1,0,0,0-1.42,0L9.84,14.67,6.71,11.53A1,1,0,1,0,5.29,13l3.84,3.84a1,1,0,0,0,1.42,0l8.16-8.16A1,1,0,0,0,18.71,7.21Z"></path></svg>
@@ -13,7 +13,6 @@ function Applicants() {
                     </div>
                 </div>
             </div>
-
 
             <div className='p-6 border-b'>
                 <p className="mb-1 text-xs tracking-wide uppercase text-slate-500">Borrower</p>
@@ -34,7 +33,6 @@ function Applicants() {
                     </div>
                 </div>
             </div>
-
 
             <div className='p-6'>
                 <p className="mb-1 text-xs tracking-wide uppercase text-slate-500">Guarantor</p>

@@ -1,4 +1,4 @@
-import ApplicationBasics from "../components/ApplicationBasics"
+import ApplicationBasics from "./components/ApplicationBasics"
 import AiCaptain from "./components/AiCaptain"
 import AiCaptainMinimised from "./components/AiCaptainMinimised"
 import Applicants from "./components/Applicants"

@@ -5,7 +5,7 @@ function ApplicationBasics() {
 
                 <div className=''>
                     <p className="mb-2 text-xs tracking-wide uppercase text-slate-500">Application Name</p>
-                    <p className='text-xl font-semibold'>Johns Dreamhome</p>
+                    <p className='text-xl font-semibold'>Maxs Dreamhome</p>
                 </div>
 
                 <div className=''>
