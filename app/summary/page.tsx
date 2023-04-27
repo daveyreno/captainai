@@ -1,11 +1,12 @@
-import AiCaptain from "../components/AiCaptain"
-import AiCaptainMinimised from "../components/AiCaptainMinimised"
-import Applicants from "../components/Applicants"
 import ApplicationBasics from "../components/ApplicationBasics"
-import LoanInfo from "../components/LoanInfo"
-import PrimaryProperty from "../components/PrimaryProperty"
-import PrimaryPurpose from "../components/PrimaryPurpose"
-import Todo from "../components/Todo"
+import AiCaptain from "./components/AiCaptain"
+import AiCaptainMinimised from "./components/AiCaptainMinimised"
+import Applicants from "./components/Applicants"
+import LoanInfo from "./components/LoanInfo"
+import PrimaryProperty from "./components/PrimaryProperty"
+import PrimaryPurpose from "./components/PrimaryPurpose"
+import Todo from "./components/Todo"
+
 
 function SummaryPage() {
   return (

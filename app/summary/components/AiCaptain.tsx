@@ -12,7 +12,7 @@ function AiCaptain() {
                     <Image alt='Quality ScoreⓇ' className="" height='200' width='200' src='/guage.png' />
                 </div>
 
-                <p className='flex justify-center gap-1'>This application has a <span className='font-semibold'>40% probability</span> of MIR</p>
+                <p className='flex justify-center gap-1'>This application has a <span className='font-semibold'>40% probability</span> of STPi</p>
 
             </div>
 

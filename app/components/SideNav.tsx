@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function SideNav() {
     return (
         <>
@@ -37,12 +39,17 @@ function SideNav() {
 
             {/* MAXIMISED MENU */}
             <div className='flex-col hidden min-h-screen gap-1 p-3 tracking-wide bg-white border-r lg:flex lg:w-96'>
-                <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg bg-slate-100'>
-                    <div className='flex justify-center w-6'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="clipboard"><path fill="#%236563FF" d="M17,4H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+
+                <Link href='/summary'>
+                    <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg bg-slate-100'>
+                        <div className='flex justify-center w-6'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="clipboard"><path fill="#%236563FF" d="M17,4H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+                        </div>
+                        <p className='font-semibold'>Summary</p>
                     </div>
-                    <p className='font-semibold'>Summary</p>
-                </div>
+                </Link>
+
+
                 <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg cursor-pointer hover:bg-slate-100'>
                     <div className='flex justify-center w-6'>
                         <svg xmlns="http://www.w3.org/2000/svg" width='20' data-name="Layer 1" viewBox="0 0 24 24" id="building"><path fill="#%236563FF" d="M14,8h1a1,1,0,0,0,0-2H14a1,1,0,0,0,0,2Zm0,4h1a1,1,0,0,0,0-2H14a1,1,0,0,0,0,2ZM9,8h1a1,1,0,0,0,0-2H9A1,1,0,0,0,9,8Zm0,4h1a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Zm12,8H20V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3V20H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm-8,0H11V16h2Zm5,0H15V15a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1v5H6V4H18Z"></path></svg>
@@ -91,18 +98,24 @@ function SideNav() {
                     </div>
                     <p>Savings calculator</p>
                 </div>
-                <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg cursor-pointer hover:bg-slate-100'>
-                    <div className='flex justify-center w-6'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="exclamation-octagon"><path fill="#%236563FF" d="M12,7a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V8A1,1,0,0,0,12,7Zm0,8a1,1,0,1,0,1,1A1,1,0,0,0,12,15Zm9.71-7.44L16.44,2.29A1.05,1.05,0,0,0,15.73,2H8.27a1.05,1.05,0,0,0-.71.29L2.29,7.56A1.05,1.05,0,0,0,2,8.27v7.46a1.05,1.05,0,0,0,.29.71l5.27,5.27a1.05,1.05,0,0,0,.71.29h7.46a1.05,1.05,0,0,0,.71-.29l5.27-5.27a1.05,1.05,0,0,0,.29-.71V8.27A1.05,1.05,0,0,0,21.71,7.56ZM20,15.31,15.31,20H8.69L4,15.31V8.69L8.69,4h6.62L20,8.69Z"></path></svg>
+
+                <Link href='/required-actions'>
+                    <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg cursor-pointer hover:bg-slate-100'>
+                        <div className='flex justify-center w-6'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="exclamation-octagon"><path fill="#%236563FF" d="M12,7a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V8A1,1,0,0,0,12,7Zm0,8a1,1,0,1,0,1,1A1,1,0,0,0,12,15Zm9.71-7.44L16.44,2.29A1.05,1.05,0,0,0,15.73,2H8.27a1.05,1.05,0,0,0-.71.29L2.29,7.56A1.05,1.05,0,0,0,2,8.27v7.46a1.05,1.05,0,0,0,.29.71l5.27,5.27a1.05,1.05,0,0,0,.71.29h7.46a1.05,1.05,0,0,0,.71-.29l5.27-5.27a1.05,1.05,0,0,0,.29-.71V8.27A1.05,1.05,0,0,0,21.71,7.56ZM20,15.31,15.31,20H8.69L4,15.31V8.69L8.69,4h6.62L20,8.69Z"></path></svg>
+                        </div>
+                        <p>Required actions</p>
                     </div>
-                    <p>Required actions</p>
-                </div>
-                <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg cursor-pointer hover:bg-slate-100'>
-                    <div className='flex justify-center w-6'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="file-check"><path fill="#%236563FF" d="M20,8.94a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.32.32,0,0,0-.09,0A.88.88,0,0,0,13.05,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V9S20,9,20,8.94ZM14,5.41,16.59,8H15a1,1,0,0,1-1-1ZM18,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4h5V7a3,3,0,0,0,3,3h3Zm-3.71-6.71L11,15.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4a1,1,0,0,0-1.42-1.42Z"></path></svg>
+                </Link>
+
+                <Link href='/required-docs'>
+                    <div className='flex items-center gap-2 p-3 transition duration-300 rounded-lg cursor-pointer hover:bg-slate-100'>
+                        <div className='flex justify-center w-6'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width='20' viewBox="0 0 24 24" id="file-check"><path fill="#%236563FF" d="M20,8.94a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.32.32,0,0,0-.09,0A.88.88,0,0,0,13.05,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V9S20,9,20,8.94ZM14,5.41,16.59,8H15a1,1,0,0,1-1-1ZM18,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4h5V7a3,3,0,0,0,3,3h3Zm-3.71-6.71L11,15.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4a1,1,0,0,0-1.42-1.42Z"></path></svg>
+                        </div>
+                        <p>Required documents</p>
                     </div>
-                    <p>Required documents</p>
-                </div>
+                </Link>
             </div>
         </>
     )
