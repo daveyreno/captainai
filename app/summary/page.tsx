@@ -1,4 +1,5 @@
 import AiCaptain from "../components/AiCaptain"
+import AiCaptainMinimised from "../components/AiCaptainMinimised"
 import Applicants from "../components/Applicants"
 import ApplicationBasics from "../components/ApplicationBasics"
 import LoanInfo from "../components/LoanInfo"
@@ -34,6 +35,7 @@ function SummaryPage() {
           {/* SECOND COLUMN */}
           <div className='flex flex-col gap-4 md:w-1/2'>
 
+            <AiCaptainMinimised />
             <AiCaptain />
             <Todo />
 
