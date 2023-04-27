@@ -20,8 +20,13 @@ function RequiredActionsPage() {
                         <div className='flex justify-center w-1/2 p-5 text-sm font-semibold tracking-widest uppercase transition duration-300 bg-white border-t border-l rounded-tl-lg cursor-pointer hover:text-teal-500'>Todo</div>
                         <div className='flex justify-center w-1/2 p-5 text-sm font-semibold tracking-widest uppercase transition duration-300 border-l border-r rounded-tr-lg cursor-pointer bg-slate-100 hover:bg-white border-y hover:text-teal-500'>Complete</div>
                     </div>
-                    <div className='p-3 bg-white border-b border-x'>
-                        Filters
+                    <div className='flex p-3 bg-white border-b border-x'>
+
+                        <div className='flex items-center p-3 border rounded-lg hover:slate-100 '>
+                            <p className='ml-2 mr-10'>Option</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" height='20' viewBox="0 0 24 24" id="angle-down"><path fill="#%236563FF" d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path></svg>
+                        </div>
+
                     </div>
 
                     <div className='flex items-center justify-between p-6 bg-white border-b cursor-pointer border-x hover:bg-slate-100'>
