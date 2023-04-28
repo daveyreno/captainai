@@ -45,7 +45,7 @@ function ImageViewer() {
                             </div>
                         </div>
 
-                        <div className='flex gap-2'>
+                        <div className='flex flex-col gap-2'>
                             <div className=''>
                                 <p className='text-sm'>From</p>
                                 <p>Max McGarryface</p>
@@ -56,7 +56,7 @@ function ImageViewer() {
                             </div>
                         </div>
 
-                        <button className="w-full p-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-300 bg-red-500 rounded-lg hover:bg-red-600">
+                        <button className="w-full p-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-300 bg-red-500 rounded-lg hover:bg-teal-600">
                             Update applicant name
                         </button>
 
