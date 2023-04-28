@@ -115,7 +115,7 @@ function ImageViewer() {
                       setUpdateApplicantName(true);
                       setTimeout(() => {
                         setupdatefilename(true);
-                      }, 1000);
+                      }, 2000);
                     }, 500);
                   }}
                   className="w-full p-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-300 bg-red-500 rounded-lg hover:bg-teal-600"
