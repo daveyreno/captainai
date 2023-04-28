@@ -3,11 +3,11 @@ import formidable from "formidable";
 import path from "path";
 import fs from "fs/promises";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//   },
+// };
 
 const readFile = (
   req: NextApiRequest,

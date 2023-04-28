@@ -1,27 +1,31 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 function RequiredDocsPage() {
   const [uploading, setUploading] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File>();
   const [selectImage, setSelectImage] = useState("");
+  const [progress, setProgress] = useState(1);
+  const [showUpload, setShowUpload] = useState(false);
 
   const handleUpload = async () => {
     setUploading(true);
     try {
       if (!selectedFile) return;
-      const formData = new FormData();
-      formData.append("myImage", selectedFile);
-      const { data } = await axios.post("/api/image", formData);
-      console.log(data);
-      setSelectImage("");
+
+      // const formData = new FormData();
+      // formData.append("myImage", selectedFile);
+      // const { data } = await axios.post("/api/image", formData);
+      // console.log(data);
+      // setSelectImage("");
     } catch (error: any) {
       console.log(error.response?.data);
     }
     setUploading(false);
   };
-
+  console.log("progress", progress);
   return (
     <div className="flex justify-center">
       <div className="flex flex-col w-full max-w-6xl gap-4 p-6 md:p-8">
@@ -107,7 +111,14 @@ function RequiredDocsPage() {
               </label>
 
               <button
-                onClick={handleUpload}
+                onClick={() => {
+                  setShowUpload(true);
+                  handleUpload();
+                  setInterval(() => {
+                    progress < 3 && setProgress(progress + 1);
+                    window.location.assign("/image-viewer");
+                  }, 500);
+                }}
                 disabled={uploading}
                 style={{ opacity: uploading ? ".5" : "1" }}
                 className="w-full p-4 text-sm font-semibold tracking-widest text-white uppercase transition duration-300 bg-teal-500 rounded-lg lg:px-6 hover:bg-teal-600 md:w-fit"
@@ -116,12 +127,22 @@ function RequiredDocsPage() {
               </button>
             </div>
 
-            <div className="flex flex-col justify-end gap-4 p-6 bg-white border-b border-x">
-              <p>Uploading</p>
-              <div className="rounded-full bg-slate-200">
-                <div className="w-1/3 h-2 bg-teal-500 rounded-full"></div>
+            {showUpload && (
+              <div className="flex flex-col justify-end gap-4 p-6 bg-white border-b border-x">
+                <p>Uploading</p>
+                <div className="rounded-full bg-slate-200">
+                  <div
+                    className={`w-${progress}/3 h-2 bg-teal-500 rounded-full`}
+                  ></div>
+                  {/* {halfstate && (
+                  <div className="w-2/3 h-2 bg-teal-500 rounded-full"></div>
+                )}
+                {fullstate && (
+                  <div className="w-3/3 h-2 bg-teal-500 rounded-full"></div>
+                )} */}
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="flex justify-between gap-4 p-6 bg-white border-b border-x">
               <p>DriversLicence.pdf</p>
