@@ -2,12 +2,14 @@ function Todo() {
     return (
         <div className='flex flex-col'>
 
+
+            {/* TABS */}
             <div className='flex'>
                 <div className='flex justify-center w-1/2 p-5 text-xs font-semibold tracking-widest uppercase transition duration-300 bg-white border-t border-l rounded-tl-lg cursor-pointer hover:text-teal-500'>Todo</div>
                 <div className='flex justify-center w-1/2 p-5 text-xs font-semibold tracking-widest uppercase transition duration-300 border-l border-r rounded-tr-lg cursor-pointer bg-slate-100 hover:bg-white border-y hover:text-teal-500'>Complete</div>
             </div>
 
-            {/* TABS */}
+
             <div className='flex justify-center gap-1 py-4 text-sm bg-white border-b border-x text-slate-500'>There are currently <span className='font-bold text-slate-800'>4 outstanding</span> items.</div>
 
             {/* START OF ITEMS */}

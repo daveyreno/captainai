@@ -4,7 +4,6 @@ import Snapshot from './components/Snapshot'
 import PersistentPanel from './components/PersistentPanel'
 import Header from './components/Header'
 
-
 export const metadata = {
   title: 'AI Captain Demo',
 }
